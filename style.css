@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+
+    padding: 0%;
+}
+
+.container{
+    border: 1px solid;
+    height:fit-content
+}
+.navbar{
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+.navbar div{
+    border: 1px solid;
+    height: 50px;
+    width: 60px;
+    margin-left: 30px;
+}

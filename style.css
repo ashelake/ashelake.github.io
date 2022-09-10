@@ -1,9 +1,17 @@
 *{
     margin: 0%;
-
+    box-sizing: border-box;
     padding: 0%;
 }
-
+:root{
+    --bg-color:#ffffff;
+    --text-color:#000;
+    --second-color:#a09dab;
+    --main-color:#f75023;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
 .container{
     border: 1px solid;
     height:fit-content

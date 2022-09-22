@@ -28,3 +28,14 @@ sr.reveal('.home-img',{delay:350, origin:'right'})
 
 sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})
 
+GitHubCalendar(".calendar", "ashelake");
+
+// or enable responsive functionality:
+GitHubCalendar(".calendar", "ashelake", { responsive: true });
+
+// Use a proxy
+GitHubCalendar(".calendar", "ashelake", {
+   proxy (ashelake) {
+	 return fetch(`https://your-proxy.com/github?user=${ashelake}`)
+   }
+}).then(r => r.text())

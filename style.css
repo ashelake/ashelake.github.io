@@ -267,12 +267,18 @@ header.sticky{
 	text-align: center;
 	cursor: pointer;
 	
+	
 }
 .col{
 	position: relative;
 	margin-bottom: 10px;
-	
+	/* border: 1px solid; */
 	/* height: 300px; */
+}
+.img-text{
+	padding: 5px;
+	/* border: 1px solid; */
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .col img{
 	max-width: 100%;
@@ -448,7 +454,33 @@ header.sticky{
 	line-height: 26px;
 	margin-bottom: 25px;
 }
+form{
+	display: flex;
+	flex-direction: column;
+}
 .contact .action form input[type="email"] {
+	max-width: 100%;
+	width: 470px;
+	padding: 12px 15px;
+	background: var(--bg-color);
+	color: var(--text-color);
+	border: none;
+	outline: none;
+	margin: 0 10px 20px 0;
+	border-radius: 30px;
+}
+.contact .action form input[type="text"] {
+	max-width: 100%;
+	width: 470px;
+	padding: 12px 15px;
+	background: var(--bg-color);
+	color: var(--text-color);
+	border: none;
+	outline: none;
+	margin: 0 10px 20px 0;
+	border-radius: 30px;
+}
+.contact .action form input[type="text"] {
 	max-width: 100%;
 	width: 470px;
 	padding: 12px 15px;

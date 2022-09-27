@@ -157,7 +157,7 @@
       </div>
 
       <div class="portfolio-content">
-        <div>
+        <div class="img-text">
         <div class="col">
           <img src="img/work1.jpeg" />
           <div class="layer">
@@ -170,11 +170,20 @@
           <p>This is Clone of the Deccan Chronical which publishes the largest circulated English
             newspaper in South India
           </p>
+          <hr style="margin-top: 3px;">
+          
           <h4 class="tech-stack">Tech-Stack</h4>
           <p>REACT | HTML | CSS | GIT</p>
+          
+          <h4 class="tech-stack">Areas of Responsibility</h4>
+          
+            <li style="list-style: inside;">Individually build project in continues 7 working
+              days.</li>
+              <li style="list-style: inside;">Added some live update features and update
+                based on api request.</li>
         </div>
       </div>
-      <div>
+      <div class="img-text">
         <div class="col">
           <img src="img/ZARA.png" />
           <div class="layer">
@@ -186,11 +195,16 @@
         <div>
           <a href="https://github.com/ashelake/truculent-pie-36" target="_blank"><h5 class="top-btn">Code</h5></a>
           <p>Inspired from ZARA I have created ZARA Clone, ZARA is Womens clothing site where you can complete start to end shopping flow  </p>
+          <hr style="margin-top: 3px;">
+          
           <h4 class="tech-stack">Tech-Stack</h4>
           <p>JAVASCRIPT | HTML | CSS | GIT</p>
+          <h4 class="tech-stack">Areas of Responsibility</h4>
+            <li style="list-style: inside;">Leaded team of 5 members.</li>
+              <li style="list-style: inside;">Created Navbar and Homepage of the site.</li>
         </div>
       </div>
-      <div>
+      <div class="img-text">
         <div class="col">
           <img src="img/work3.png" />
           <div class="layer">
@@ -206,8 +220,13 @@
             shoes, accessories, beauty, furniture, home décor, garden,
             bridal, and more.
             </p>
-            <h4 class="tech-stack">Tech-Stack</h4>
+            <hr style="margin-top: 3px;">
+            <h4  class="tech-stack">Tech-Stack</h4>
             <p>JAVASCRIPT | HTML | CSS | GIT</p>
+            <h4 class="tech-stack">Areas of Responsibility</h4>
+            <li style="list-style: inside;">Created Navbar and Sidemenu with realtime
+              update.</li>
+              <li style="list-style: inside;">Added Signup and Login feature.</li>
         </div>
       </div>
         
@@ -260,13 +279,26 @@
         </div>
 
         <div class="action">
-          <form>
-            <input
+          <form onsubmit="Sendemail(); reset(); return false">
+              <input
+              type="text"
+              name="name"
+              placeholder="Enter Your name"
+              required
+            />
+            <input id="email"
               type="email"
               name="email"
               placeholder="Enter Your email"
               required
             />
+            <input
+            type="text"
+            
+            name="body"
+            placeholder="Please write here"
+            required
+          />
             <input type="submit" name="submit" value="Submit" />
           </form>
         </div>
@@ -279,7 +311,23 @@
     </div>
 
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+      function Sendemail(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "ashelake88@gmail.com",
+    Password : "C406BEB682545B02E7BCCFBEBE301A61CF10",
+    To : 'ashelake88@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+      }
+    </script>
     <script
   src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>

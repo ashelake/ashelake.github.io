@@ -72,14 +72,14 @@ header{
 }
 .top-btn{
 	display: inline-block;
-	padding: 9px 30px;
+	padding: 2px 2px;
 	background: transparent;
 	border: 2px solid var(--main-color);
 	border-radius: 30px;
 	color: var(--text-color);
 	letter-spacing: 1px;
 	font-size: var(--p-font);
-	font-weight: 500;
+	font-weight: 100;
 	transition: ease .50s;
 }
 .top-btn:hover{
@@ -88,7 +88,9 @@ header{
 	border: 2px solid var(--main-color);
 	color: var(--bg-color);
 }
-
+.statImage{
+	width: 50%;
+}
 section{
 	padding: 100px 18%;
 }
@@ -411,6 +413,9 @@ header.sticky{
 	transition: ease .40s;
 	cursor: pointer;
 }
+.stat{
+	width:50
+}
 .one{
 	background: #baebcd;
 }
@@ -516,6 +521,9 @@ form{
 		padding: 16px 3%;
 		transition: .3s;
 	}
+	.statImage{
+		width: 60%;
+	}
 	header.sticky{
 		padding: 10px 3%;
 		transition: .3s;
@@ -539,6 +547,9 @@ form{
 @media (max-width: 970px){
 	#menu-icon{
 		display: block;
+	}
+	.statImage{
+		width:50%
 	}
 	.home{
 		min-height: 80vh;
@@ -578,6 +589,9 @@ form{
 		min-height: 130vh;
 		grid-gap: 1rem;
 	}
+	.statImage{
+		width:100%
+	}
 	.home-text{
 		padding-top: 55px;
 	}
@@ -607,5 +621,12 @@ form{
 @media (max-width: 540px){
 	.contact .action form input[type="email"] {
 		width: 310px;
+	}
+	.statImage{
+		width:50%;
+		border:1px solid; 
+	}
+	#statImage{
+		width:80%;
 	}
 }

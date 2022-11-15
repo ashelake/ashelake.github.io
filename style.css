@@ -260,8 +260,8 @@ header.sticky{
 }
 .portfolio-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+	grid-gap: 10rem;
 	align-items: center;
 	margin-top: 3rem;
 	text-align: center;
@@ -276,9 +276,9 @@ header.sticky{
 	/* height: 300px; */
 }
 .img-text{
-	padding: 5px;
-	/* border: 1px solid; */
-	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding: 1rem;
+	height: 650px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .col img{
 	max-width: 100%;

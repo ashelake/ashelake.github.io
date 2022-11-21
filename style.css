@@ -165,9 +165,10 @@ span{
 	transform: scale(1.1);
 }
 .home-img img{
-	max-width: 100%;
+	max-width: 70%;
 	width: 540px;
 	height: auto;
+	border-radius: 50%;
 }
 header.sticky{
 	background: var(--bg-color);
